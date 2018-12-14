@@ -20,6 +20,8 @@
         <property name="testConnectionOnCheckin" value="false"/>
         <property name="testConnectionOnCheckout" value="true"/>
         <property name="preferredTestQuery" value="${jdbc.validationQuery}"/>
+        <property name="maxStatementsPerConnection" value="100"/>
+        <property name="statementCacheNumDeferredCloseThreads" value="1"/>
     </bean>
 
     <bean id="mysqlSessionFactory" class="com.sohu.cache.app.AliasesResourceSqlSessionFactoryBean">
